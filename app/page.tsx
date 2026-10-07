@@ -1,7 +1,13 @@
+const MAPS_LOCATION_URL =
+  "https://www.google.com/maps/search/?api=1&query=13.159478303269635%2C123.72196217620163";
+
 const MAPS_DIRECTIONS_URL =
   "https://www.google.com/maps/dir/?api=1&destination=13.159478303269635%2C123.72196217620163&travelmode=driving";
 
-const WHATSAPP_LINK = "#";
+const WHATSAPP_LINK =
+  "whatsapp://send?phone=639164075011&text=Hello%20Jill%2C%20I%20am%20interested%20in%20the%20titled%20lots%20for%20sale%20in%20Tagas%2C%20Daraga.%20Can%20we%20discuss%3F";
+
+const MESSENGER_LINK = "https://m.me/kalilinux2022.3";
 
 export default function Home() {
   return (
@@ -13,7 +19,8 @@ export default function Home() {
             <h1>Titled Lots for Sale in Tagas, Daraga, Albay</h1>
             <p className="lead">
               A well-located property in Daraga with convenient access, nearby
-              establishments, and a very near view of Mayon Volcano.
+              establishments, and Mayon Volcano visible from the surrounding
+              area.
             </p>
 
             <div className="priceBox">
@@ -24,20 +31,26 @@ export default function Home() {
             <div className="heroActions">
               <a
                 className="button primary"
+                href={MAPS_LOCATION_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Property Location
+              </a>
+
+              <a
+                className="button secondary"
                 href={MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noreferrer"
               >
                 Get Directions
               </a>
-              <a className="button secondary" href="#contact">
-                Contact Jill Mabini
-              </a>
             </div>
 
             <p className="locationNote">
-              Exact title copies, technical descriptions, and additional property
-              documents are available upon legitimate inquiry.
+              Exact title copies, technical descriptions, and additional
+              property documents are available upon legitimate inquiry.
             </p>
           </div>
 
@@ -68,11 +81,11 @@ export default function Home() {
             </article>
             <article className="card">
               <span>Ownership</span>
-              <strong>Two titled lots</strong>
+              <strong>2 clean titled lots</strong>
             </article>
             <article className="card">
               <span>Price</span>
-              <strong>₱20,000 / sq m</strong>
+              <strong>₱20,000 per sq meter</strong>
             </article>
           </div>
         </div>
@@ -131,8 +144,8 @@ export default function Home() {
             <div>
               <strong>Titled property</strong>
               <p>
-                Two titled lots are available. Supporting documents can be shared
-                with serious buyers upon request.
+                Two clean titled lots are available. Supporting documents can be
+                shared with serious buyers upon request.
               </p>
             </div>
             <div>
@@ -152,9 +165,8 @@ export default function Home() {
             <p className="eyebrow">LOCATION GUIDE</p>
             <h2>Easy to locate in Daraga</h2>
             <p>
-              Use the map and directions button as a general guide to the
-              property location. This is ideal for interested buyers who want to
-              check the area first before scheduling a visit.
+              View the property location on Google Maps, or get driving
+              directions from your current location.
             </p>
             <div className="heroActions">
               <a
@@ -206,8 +218,8 @@ export default function Home() {
             <p className="eyebrow">INTERESTED IN THIS PROPERTY?</p>
             <h2>Get in touch with Jill Mabini</h2>
             <p>
-              For price discussion, site visit arrangements, exact lot details,
-              and document requests, you may contact Jill Mabini directly.
+              For property details, site visit arrangements, document requests,
+              or other inquiries, contact Jill Mabini directly.
             </p>
           </div>
 
@@ -217,9 +229,24 @@ export default function Home() {
               <strong>Jill Mabini</strong>
             </div>
             <div className="contactActions">
-              <a className="button primary" href={WHATSAPP_LINK}>
-                WhatsApp Link to be Added
+              <a
+                className="button primary"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Message on WhatsApp
               </a>
+
+              <a
+                className="button secondary"
+                href={MESSENGER_LINK}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Message on Messenger
+              </a>
+
               <a
                 className="button secondary"
                 href={MAPS_DIRECTIONS_URL}
@@ -229,10 +256,6 @@ export default function Home() {
                 Get Directions
               </a>
             </div>
-            <p className="smallPrint">
-              Replace the WhatsApp link in the code once the final WhatsApp link
-              is ready.
-            </p>
           </div>
         </div>
       </section>
