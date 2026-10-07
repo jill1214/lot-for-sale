@@ -2,7 +2,7 @@ const MAPS_LOCATION_URL =
   "https://www.google.com/maps/search/?api=1&query=13.159478303269635%2C123.72196217620163";
 
 const MAPS_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir/?api=1&destination=13.159478303269635%2C123.72196217620163&travelmode=driving";
+  "https://www.google.com/maps/dir/?api=1&destination=5P5C%2BQQW%2C%20Daraga%2C%20Albay&travelmode=driving";
 
 const WHATSAPP_LINK =
   "whatsapp://send?phone=639164075011&text=Hello%20Jill%2C%20I%20am%20interested%20in%20the%20titled%20lots%20for%20sale%20in%20Tagas%2C%20Daraga.%20Can%20we%20discuss%3F";
