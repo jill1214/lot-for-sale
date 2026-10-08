@@ -1,3 +1,5 @@
+"use client";
+
 const MAPS_LOCATION_URL =
   "https://www.google.com/maps/search/?api=1&query=13.159478303269635%2C123.72196217620163";
 
@@ -8,6 +10,15 @@ const WHATSAPP_LINK =
   "whatsapp://send?phone=639164075011&text=Hello%20Jill%2C%20I%20am%20interested%20in%20the%20titled%20lots%20for%20sale%20in%20Tagas%2C%20Daraga.%20Can%20we%20discuss%3F";
 
 const MESSENGER_LINK = "https://m.me/kalilinux2022.3";
+
+const trackEvent = (eventName: string) => {
+  if (
+    typeof window !== "undefined" &&
+    typeof (window as any).gtag === "function"
+  ) {
+    (window as any).gtag("event", eventName);
+  }
+};
 
 export default function Home() {
   return (
@@ -43,6 +54,7 @@ export default function Home() {
                 href={MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackEvent("get_directions")}
               >
                 Get Directions
               </a>
@@ -174,6 +186,7 @@ export default function Home() {
                 href={MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackEvent("get_directions")}
               >
                 Open Google Maps Directions
               </a>
@@ -234,6 +247,7 @@ export default function Home() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackEvent("whatsapp_click")}
               >
                 Message on WhatsApp
               </a>
@@ -243,6 +257,7 @@ export default function Home() {
                 href={MESSENGER_LINK}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackEvent("messenger_click")}
               >
                 Message on Messenger
               </a>
@@ -252,6 +267,7 @@ export default function Home() {
                 href={MAPS_DIRECTIONS_URL}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => trackEvent("get_directions")}
               >
                 Get Directions
               </a>
