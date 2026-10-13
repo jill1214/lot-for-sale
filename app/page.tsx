@@ -36,7 +36,7 @@ export default function Home() {
 
             <div className="priceBox">
               <span>Asking Price</span>
-              <strong>₱20,000 per sq meter</strong>
+              <strong>₱18,000 per sq meter</strong>
             </div>
 
             <div className="heroActions">
