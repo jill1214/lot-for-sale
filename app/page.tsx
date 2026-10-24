@@ -97,7 +97,7 @@ export default function Home() {
             </article>
             <article className="card">
               <span>Price</span>
-              <strong>₱20,000 per sq meter</strong>
+              <strong>₱18,000 per sq meter</strong>
             </article>
           </div>
         </div>
